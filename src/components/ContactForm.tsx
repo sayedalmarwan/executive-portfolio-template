@@ -122,13 +122,13 @@ export default function ContactForm() {
                 {
                   icon: <Linkedin size={18} color="var(--accent-dark)" />,
                   label: "LinkedIn Profile",
-                  value: "linkedin.com",
+                  value: "linkedin.com/company/linkedin/",
                   href: personalInfo.linkedin,
                 },
                 {
                   icon: <Instagram size={18} color="var(--accent-dark)" />,
                   label: "Instagram Profile",
-                  value: "instagram.com",
+                  value: "instagram.com/instagram/",
                   href: personalInfo.instagram,
                 },
                 {
