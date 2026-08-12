@@ -13,7 +13,6 @@ const nextConfig = {
   reactStrictMode: true,
   output: "export",
   basePath: repo,
-  assetPrefix: repo ? `${repo}/` : "",
   images: {
     unoptimized: true,
   },
