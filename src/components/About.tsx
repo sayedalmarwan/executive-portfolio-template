@@ -102,7 +102,7 @@ export default function About() {
                 </div>
                 <Image
                   src={personalInfo.tciBadge}
-                  alt="Ruth Cohn Institute TCI Diploma Holder"
+                  alt="Certified Facilitator Badge"
                   width={36}
                   height={36}
                   style={{ objectFit: "contain", borderRadius: "4px", border: "1px solid #E4DDD4", height: "36px", width: "auto" }}
