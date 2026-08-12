@@ -13,6 +13,9 @@ const nextConfig = {
   reactStrictMode: true,
   output: "export",
   basePath: repo,
+  env: {
+    NEXT_PUBLIC_BASE_PATH: repo,
+  },
   images: {
     unoptimized: true,
   },

@@ -52,6 +52,8 @@ export interface ServiceOffering {
   deliverables: string[];
 }
 
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
+
 export const PORTFOLIO_DATA = {
   personalInfo: {
     name: "Marcus Vance",
@@ -64,12 +66,12 @@ export const PORTFOLIO_DATA = {
     linkedin: "https://www.linkedin.com/company/linkedin/",
     instagram: "https://www.instagram.com/instagram/",
     status: "Available for Cloud Architecture & Executive AI Advisory",
-    heroImage: "/images/avatar-hero.png",
-    presentingImage: "/images/presenting-placeholder.jpg",
-    speakingImage: "/images/speaking-placeholder.jpg",
-    tciBadge: "/images/badge-placeholder.jpg",
-    paradigmFramework: "/images/framework-placeholder.jpg",
-    coachingImage: "/images/coaching-placeholder.jpg",
+    heroImage: `${basePath}/images/avatar-hero.png`,
+    presentingImage: `${basePath}/images/presenting-placeholder.jpg`,
+    speakingImage: `${basePath}/images/speaking-placeholder.jpg`,
+    tciBadge: `${basePath}/images/badge-placeholder.jpg`,
+    paradigmFramework: `${basePath}/images/framework-placeholder.jpg`,
+    coachingImage: `${basePath}/images/coaching-placeholder.jpg`,
     bioParagraph1: "Marcus Vance is a Senior Cloud Architect and Enterprise AI Consultant with over 15 years of experience leading digital transformation, distributed systems design, and infrastructure modernization for Fortune 500 enterprises and high-growth technology scale-ups.",
     bioParagraph2: "Specializing in multi-cloud strategy (AWS, GCP, Azure), Kubernetes orchestration, and enterprise LLM integration, Marcus blends deep technical architecture with engineering mentorship to cultivate high-concurrency, resilient engineering environments.",
     stats: [
