@@ -1,6 +1,7 @@
 "use client";
 
 import React from "react";
+import Image from "next/image";
 import { GraduationCap, ShieldCheck, Calendar, MapPin } from "lucide-react";
 import { PORTFOLIO_DATA } from "@/data/portfolioData";
 
@@ -137,10 +138,12 @@ export default function Education() {
             >
               Licenses & Global Certifications
             </h3>
-            <img
-              src="/images/tci-certified-badge.jpeg"
-              alt="TCI diploma-holder by Ruth Cohn Institute for TCI-International"
-              style={{ height: "42px", objectFit: "contain", borderRadius: "4px", border: "1px solid #E4DDD4" }}
+            <Image
+              src={PORTFOLIO_DATA.personalInfo.tciBadge}
+              alt="Certified Facilitator Badge"
+              width={42}
+              height={42}
+              style={{ height: "42px", width: "auto", objectFit: "contain", borderRadius: "4px", border: "1px solid #E4DDD4" }}
             />
           </div>
 
