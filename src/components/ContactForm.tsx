@@ -80,7 +80,7 @@ export default function ContactForm() {
             </span>
           </h2>
           <p className="section-subtitle">
-            Open for corporate training programs, executive coaching, outbound team building, and leadership advisory across Middle East & Asia.
+            Open for cloud architecture engagements, enterprise AI advisory, systems modernization, and technical leadership coaching globally.
           </p>
         </div>
 

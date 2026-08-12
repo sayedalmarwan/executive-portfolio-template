@@ -38,7 +38,7 @@ export default function Services() {
             </span>
           </h2>
           <p className="section-subtitle">
-            Action-oriented workshops, TCI leadership development, sales communication training, and 1-on-1 personal executive coaching.
+            High-availability cloud architecture, enterprise AI pipelines, Kubernetes orchestration, and technical leadership advisory.
           </p>
         </div>
 

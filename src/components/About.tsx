@@ -95,9 +95,9 @@ export default function About() {
               </div>
               <div style={{ padding: "1rem 1.25rem", display: "flex", justifyContent: "space-between", alignItems: "center" }}>
                 <div>
-                  <div className="mono-label" style={{ fontSize: "0.7rem", color: "var(--accent-dark)" }}>TCI FACILITATION IN ACTION</div>
+                  <div className="mono-label" style={{ fontSize: "0.7rem", color: "var(--accent-dark)" }}>CLOUD ARCHITECTURE IN ACTION</div>
                   <div style={{ fontFamily: "var(--font-sans)", fontSize: "0.85rem", fontWeight: 600, color: "var(--ink)" }}>
-                    Theme-Centered Interaction (I, WE, IT, GLOBE) Model Presentation
+                    Enterprise Multi-Cloud Infrastructure & Distributed Systems Blueprint
                   </div>
                 </div>
                 <Image

@@ -29,7 +29,7 @@ export default function Education() {
             </span>
           </h2>
           <p className="section-subtitle">
-            Master's degree in Psychology combined with TCI Germany Diploma and Outbound Facilitation credentials.
+            Advanced degree in Computer Science combined with professional AWS, GCP, and Kubernetes certifications.
           </p>
         </div>
 

@@ -97,7 +97,7 @@ export default function Hero() {
                 fontWeight: 400,
               }}
             >
-              {personalInfo.tagline}. Over 15+ years of experience blending Theme-Centered Interaction (TCI Germany), MSc Psychology, and Outbound Facilitation across UAE, Uzbekistan, and India.
+              {personalInfo.tagline}. Over 15+ years of experience building scalable distributed systems, multi-cloud platforms, and enterprise AI integrations.
             </p>
 
             {/* CTA Buttons */}
@@ -243,9 +243,9 @@ export default function Hero() {
 
             {/* Key Credential Rows */}
             {[
-              { label: "Qualification", value: "MSc Psychology" },
-              { label: "Methodology", value: "TCI Germany" },
-              { label: "Primary Hubs", value: "Dubai & Kerala" },
+              { label: "Qualification", value: "MSc Computer Science" },
+              { label: "Core Focus", value: "AWS & Kubernetes" },
+              { label: "Primary Base", value: "San Francisco & Remote" },
             ].map((row) => (
               <div
                 key={row.label}
