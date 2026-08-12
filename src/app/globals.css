@@ -1,0 +1,443 @@
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;700&family=Plus+Jakarta+Sans:wght@600;700;800;900&display=swap');
+
+/* ─── MODERN EXECUTIVE LUXURY DESIGN TOKENS ──────────────────────────────── */
+:root {
+  /* Canvas & Surface Palette */
+  --bg:            #FBF9F5; /* Warm Alabaster off-white canvas */
+  --bg-card:       #FFFFFF; /* Crisp white card surface */
+  --bg-subtle:     #F5F2EC; /* Warm light gray-stone section tint */
+  --bg-accent-tint:#FDF4E7; /* Warm amber-50 background tint for badges */
+  
+  /* Ink & Text */
+  --ink:           #18181B; /* Near-black, warm charcoal primary */
+  --ink-muted:     #52524A; /* Warm slate body text */
+  --ink-faint:     #A09890; /* Warm stone faint metadata */
+  
+  /* Accent — Slate Amber / Warm Bronze */
+  --accent:        #C58B39; /* Primary Slate Amber / Warm Bronze */
+  --accent-dark:   #A3701E; /* Deeper burnt bronze hover */
+  --accent-warm:   #D4843A; /* Warm terracotta/burnt orange */
+  --accent-light:  #FDF4E7; /* Amber-50 soft tint surface */
+  --accent-border: #E9C882; /* Amber-200 subtle border */
+  
+  /* Border System — Soft Refined Strokes */
+  --border:        1px solid #E4DDD4; /* Subtle warm slate-gray border */
+  --border-light:  1px solid #EDE8E0; /* Ultra-light divider */
+  --border-accent: 1px solid var(--accent-border); /* Amber-200 accent border */
+  
+  /* Geometry & Rounding */
+  --radius:        12px; /* rounded-xl — buttons, cards, inputs */
+  --radius-sm:     8px;  /* rounded-lg — tags, badges, small chips */
+  --radius-xs:     6px;  /* rounded-md — inline highlights */
+  --radius-full:   9999px;
+  
+  /* Elevated Ambient Shadows */
+  --shadow:        0 1px 3px rgba(0,0,0,0.07), 0 1px 2px rgba(0,0,0,0.04);
+  --shadow-md:     0 4px 14px rgba(0,0,0,0.09), 0 2px 6px rgba(0,0,0,0.05);
+  --shadow-lg:     0 10px 30px rgba(0,0,0,0.11), 0 4px 10px rgba(0,0,0,0.06);
+  
+  /* Typography Families */
+  --font-display:  'Plus Jakarta Sans', 'Inter', sans-serif;
+  --font-serif:    'Instrument Serif', Georgia, serif;
+  --font-sans:     'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-mono:     'JetBrains Mono', monospace;
+  
+  /* Smooth Transitions */
+  --transition:    all 0.2s ease;
+  --max-width:     1200px;
+}
+
+/* ─── GLOBAL RESET ───────────────────────────────────────────────────────────── */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+  background-color: var(--bg);
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--ink);
+  font-family: var(--font-sans);
+  line-height: 1.6;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ─── BASE TYPOGRAPHY ────────────────────────────────────────────────────────── */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-display);
+  font-weight: 800;
+  line-height: 1.1;
+  color: var(--ink);
+  letter-spacing: -0.02em;
+}
+
+p {
+  font-family: var(--font-sans);
+  font-size: 1rem;
+  line-height: 1.65;
+  color: var(--ink-muted);
+}
+
+a {
+  color: var(--ink);
+  text-decoration: none;
+}
+
+/* ─── LAYOUT CONTAINERS ──────────────────────────────────────────────────────── */
+.container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.section-padding {
+  padding: 6.5rem 0;
+  border-top: var(--border);
+}
+
+@media (max-width: 768px) {
+  .container { padding: 0 1.25rem; }
+  .section-padding { padding: 4rem 0; }
+}
+
+/* ─── SECTION HEADER — Warm Amber Pill Badges ───────────────────────────────── */
+.section-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.3rem 0.9rem;
+  background: var(--accent-light);
+  border: var(--border-accent);
+  border-radius: var(--radius-full);
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: #92600A;   /* amber-800 */
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  margin-bottom: 1.25rem;
+}
+
+.section-title {
+  font-family: var(--font-display);
+  font-size: clamp(2.1rem, 4.3vw, 3.2rem);
+  font-weight: 900;
+  color: var(--ink);
+  margin-bottom: 1rem;
+  line-height: 1.08;
+  letter-spacing: -0.03em;
+}
+
+/* Inline warm-amber text underline highlights */
+.section-title .highlight {
+  background: var(--accent-light);
+  padding: 0 0.2em;
+  border-radius: var(--radius-xs);
+  border-bottom: 2px solid var(--accent-border);
+}
+
+.section-subtitle {
+  font-family: var(--font-sans);
+  font-size: 1.05rem;
+  color: var(--ink-muted);
+  line-height: 1.65;
+  max-width: 620px;
+}
+
+/* ─── EXECUTIVE LUXURY BUTTONS ───────────────────────────────────────────────── */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.55rem;
+  padding: 0.85rem 1.85rem;
+  font-family: var(--font-display);
+  font-size: 0.92rem;
+  font-weight: 700;
+  color: var(--ink);
+  background: var(--bg-card);
+  border: var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  cursor: pointer;
+  transition: var(--transition);
+  text-decoration: none;
+  user-select: none;
+}
+
+.btn:hover {
+  box-shadow: var(--shadow-md);
+  transform: translateY(-1px);
+}
+
+.btn:active {
+  transform: translateY(0);
+  box-shadow: var(--shadow);
+}
+
+/* Primary — Warm Bronze Amber */
+.btn-accent {
+  background: var(--accent);
+  color: #FFFFFF;
+  border: 1px solid var(--accent-dark);
+}
+
+.btn-accent:hover {
+  background: var(--accent-dark);
+  color: #FFFFFF;
+}
+
+/* Soft — Warm Tinted Light */
+.btn-lime {
+  background: var(--accent-light);
+  color: var(--accent-dark);
+  border: var(--border-accent);
+}
+
+.btn-lime:hover {
+  background: #FBE8C3;
+  color: var(--accent-dark);
+}
+
+/* ─── LUXURY ELEVATED CARD ───────────────────────────────────────────────────── */
+.neo-card {
+  background: var(--bg-card);
+  border: var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  transition: var(--transition);
+}
+
+.neo-card:hover {
+  box-shadow: var(--shadow-md);
+  transform: translateY(-2px);
+}
+
+/* ─── METADATA LABELS & TAGS ─────────────────────────────────────────────────── */
+.mono-label {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: var(--ink-faint);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+/* Soft warm amber pill tag */
+.mono-tag {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  font-weight: 600;
+  color: #92600A;
+  background: var(--accent-light);
+  border: var(--border-accent);
+  border-radius: var(--radius-full);
+  padding: 0.2rem 0.75rem;
+  display: inline-block;
+}
+
+.mono-tag-accent {
+  background: var(--accent-light);
+  color: #92600A;
+  border: var(--border-accent);
+}
+
+/* ─── SPREADSHEET ROW INDEX ──────────────────────────────────────────────────── */
+.row-index {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  border-top: var(--border);
+}
+
+.row-index li {
+  border-bottom: var(--border);
+  background: var(--bg-card);
+  transition: var(--transition);
+}
+
+.row-index li:hover {
+  background: var(--bg-subtle);
+}
+
+/* ─── SELECTION & SCROLLBAR ──────────────────────────────────────────────────── */
+::selection {
+  background: var(--accent-light);
+  color: var(--ink);
+}
+
+::-webkit-scrollbar { width: 8px; }
+::-webkit-scrollbar-track { background: var(--bg); }
+::-webkit-scrollbar-thumb {
+  background: #D4C4B0;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover { background: var(--accent); }
+
+/* ─── UTILITY ANIMATIONS ─────────────────────────────────────────────────────── */
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(360deg); }
+}
+
+.spinning-icon {
+  animation: spin 1s linear infinite;
+}
+
+/* ─── RESPONSIVE COMPONENT LAYOUTS ──────────────────────────────────────── */
+
+/* Hero Section */
+.hero-section {
+  padding-top: 75px !important;
+}
+
+@media (max-width: 900px) {
+  .hero-grid {
+    grid-template-columns: 1fr !important;
+    gap: 2.5rem !important;
+  }
+  /* Move the profile card above text on mobile by ordering */
+  .hero-grid > aside {
+    order: -1;
+  }
+  .hero-section {
+    padding-top: 68px !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-section {
+    min-height: auto !important;
+    padding-bottom: 2rem;
+  }
+}
+
+/* About Section */
+@media (max-width: 850px) {
+  .about-grid {
+    grid-template-columns: 1fr !important;
+    gap: 2.5rem !important;
+  }
+}
+
+/* Experience Section */
+@media (max-width: 750px) {
+  .exp-row-btn {
+    grid-template-columns: 1fr !important;
+    gap: 0.75rem !important;
+  }
+}
+
+/* Skills Section */
+@media (max-width: 768px) {
+  .skills-grid {
+    grid-template-columns: 1fr !important;
+    gap: 0.75rem !important;
+  }
+}
+
+/* Contact Section */
+@media (max-width: 800px) {
+  .contact-grid {
+    grid-template-columns: 1fr !important;
+    gap: 2.5rem !important;
+  }
+  .form-row {
+    grid-template-columns: 1fr !important;
+  }
+  .contact-card {
+    padding: 1.5rem !important;
+  }
+}
+
+/* Navbar */
+@media (max-width: 900px) {
+  .desktop-nav {
+    display: none !important;
+  }
+  .mobile-toggle {
+    display: block !important;
+  }
+}
+
+/* Hide full name on very small screens, keep just the VT badge */
+@media (max-width: 360px) {
+  .navbar-brand-name {
+    display: none !important;
+  }
+}
+
+/* General small-screen helpers */
+@media (max-width: 480px) {
+  .section-padding {
+    padding: 3rem 0 !important;
+  }
+  .container {
+    padding: 0 1rem !important;
+  }
+}
+
+/* ─── SCROLL REVEAL ANIMATIONS ───────────────────────────────────────────── */
+
+/* Base: hidden state before scrolling into view */
+.reveal {
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity 0.65s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+              transform 0.65s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  will-change: opacity, transform;
+}
+
+.reveal-left {
+  opacity: 0;
+  transform: translateX(-32px);
+  transition: opacity 0.65s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+              transform 0.65s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  will-change: opacity, transform;
+}
+
+.reveal-right {
+  opacity: 0;
+  transform: translateX(32px);
+  transition: opacity 0.65s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+              transform 0.65s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  will-change: opacity, transform;
+}
+
+.reveal-scale {
+  opacity: 0;
+  transform: scale(0.97) translateY(20px);
+  transition: opacity 0.55s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+              transform 0.55s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  will-change: opacity, transform;
+}
+
+/* Revealed state: fully visible */
+.revealed {
+  opacity: 1 !important;
+  transform: none !important;
+}
+
+/* Staggered children delays for lists/grids */
+.reveal-stagger > *:nth-child(1) { transition-delay: 0ms; }
+.reveal-stagger > *:nth-child(2) { transition-delay: 80ms; }
+.reveal-stagger > *:nth-child(3) { transition-delay: 160ms; }
+.reveal-stagger > *:nth-child(4) { transition-delay: 240ms; }
+.reveal-stagger > *:nth-child(5) { transition-delay: 320ms; }
+.reveal-stagger > *:nth-child(6) { transition-delay: 400ms; }
+
+/* Respect reduced-motion preference */
+@media (prefers-reduced-motion: reduce) {
+  .reveal, .reveal-left, .reveal-right, .reveal-scale {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+}
