@@ -94,23 +94,6 @@ To customize text, contact info, experience items, services, or statistics:
 
 ---
 
-## 🌐 Deployment
-
-The easiest way to deploy this Next.js project live is using **Vercel**:
-
-1. Push your repository to GitHub.
-2. Import the repository into [Vercel](https://vercel.com).
-3. (Optional) Set up Environment Variables in Vercel settings for Firebase Firestore:
-   - `NEXT_PUBLIC_FIREBASE_API_KEY`
-   - `NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN`
-   - `NEXT_PUBLIC_FIREBASE_PROJECT_ID`
-   - `NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET`
-   - `NEXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID`
-   - `NEXT_PUBLIC_FIREBASE_APP_ID`
-4. Click **Deploy**.
-
----
-
 ## 📄 License
 
 MIT License — free to use for personal and commercial portfolio projects.
