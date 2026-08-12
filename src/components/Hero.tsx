@@ -127,7 +127,7 @@ export default function Hero() {
                   { href: personalInfo.linkedin, icon: <Linkedin size={17} />, label: "LinkedIn" },
                   { href: personalInfo.instagram, icon: <Instagram size={17} />, label: "Instagram" },
                   { href: `mailto:${personalInfo.email}`, icon: <Mail size={17} />, label: "Email" },
-                  { href: `tel:${personalInfo.phoneUAE}`, icon: <Phone size={17} />, label: "UAE Call" },
+                  { href: `tel:${personalInfo.phoneUAE}`, icon: <Phone size={17} />, label: "Direct Phone" },
                 ].map((item) => (
                   <a
                     key={item.label}

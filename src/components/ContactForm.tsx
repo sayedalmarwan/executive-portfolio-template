@@ -109,13 +109,13 @@ export default function ContactForm() {
                 },
                 {
                   icon: <Phone size={18} color="var(--accent-dark)" />,
-                  label: "UAE Call / WhatsApp",
+                  label: "Primary Advisory Line",
                   value: personalInfo.phoneUAE,
                   href: `tel:${personalInfo.phoneUAE}`,
                 },
                 {
                   icon: <Phone size={18} color="var(--accent-dark)" />,
-                  label: "India Call / WhatsApp",
+                  label: "Direct Mobile / WhatsApp",
                   value: personalInfo.phoneIndia,
                   href: `tel:${personalInfo.phoneIndia}`,
                 },
@@ -134,7 +134,7 @@ export default function ContactForm() {
                 {
                   icon: <MapPin size={18} color="var(--accent-dark)" />,
                   label: "Primary Base Hubs",
-                  value: "Dubai, UAE & Kerala, India",
+                  value: personalInfo.location,
                   href: null,
                 },
               ].map((item) => (
