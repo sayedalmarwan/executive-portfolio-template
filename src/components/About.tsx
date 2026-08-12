@@ -84,13 +84,13 @@ export default function About() {
                 background: "var(--bg-card)",
               }}
             >
-              <div style={{ position: "relative", width: "100%", height: "220px" }}>
+              <div style={{ position: "relative", width: "100%", height: "220px", background: "linear-gradient(135deg, #EBF3FA 0%, #DCE8F5 100%)" }}>
                 <Image
                   src={personalInfo.presentingImage}
                   alt={`${personalInfo.name} facilitating Workshop`}
                   fill
                   sizes="(max-width: 850px) 100vw, 50vw"
-                  style={{ objectFit: "cover", objectPosition: "center" }}
+                  style={{ objectFit: "contain", objectPosition: "center", padding: "1rem" }}
                 />
               </div>
               <div style={{ padding: "1rem 1.25rem", display: "flex", justifyContent: "space-between", alignItems: "center" }}>

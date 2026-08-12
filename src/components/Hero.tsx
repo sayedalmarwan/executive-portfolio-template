@@ -160,6 +160,10 @@ export default function Hero() {
                 height: "280px",
                 overflow: "hidden",
                 borderBottom: "var(--border)",
+                background: "linear-gradient(135deg, #EBF3FA 0%, #DCE8F5 100%)",
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center",
               }}
             >
               <Image
@@ -169,8 +173,9 @@ export default function Hero() {
                 priority
                 sizes="(max-width: 900px) 100vw, 40vw"
                 style={{
-                  objectFit: "cover",
-                  objectPosition: "center 20%",
+                  objectFit: "contain",
+                  objectPosition: "center 30%",
+                  padding: "1.5rem",
                 }}
               />
               <div
