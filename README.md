@@ -72,8 +72,8 @@ portfolio-template/
 
 ### 2. Installation
 ```bash
-git clone https://github.com/sayedalmarwan/nextjs-executive-portfolio-template.git
-cd nextjs-executive-portfolio-template
+git clone https://github.com/sayedalmarwan/executive-portfolio-template.git
+cd executive-portfolio-template
 npm install
 ```
 

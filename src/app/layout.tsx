@@ -19,17 +19,17 @@ export const metadata: Metadata = {
     "Organizational Psychology",
     "Sales Communication Workshops",
   ],
-  authors: [{ name: "Alex Morgan", url: "https://nextjs-executive-portfolio-template.vercel.app/" }],
+  authors: [{ name: "Alex Morgan", url: "https://executive-portfolio-template.vercel.app/" }],
   openGraph: {
     title: "Alex Morgan | Corporate Trainer & Executive Leadership Coach",
     description: "Empowering Corporate Teams, Fostering Leadership & Driving Transformation Through Action-Oriented Learning.",
     type: "website",
     locale: "en_US",
-    url: "https://nextjs-executive-portfolio-template.vercel.app/",
+    url: "https://executive-portfolio-template.vercel.app/",
     siteName: "Executive Portfolio Template",
     images: [
       {
-        url: "https://nextjs-executive-portfolio-template.vercel.app/og-image.jpg",
+        url: "https://executive-portfolio-template.vercel.app/og-image.jpg",
         width: 1200,
         height: 630,
         alt: "Alex Morgan — Corporate Trainer & Executive Leadership Coach",
@@ -40,7 +40,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Alex Morgan | Corporate Trainer & Executive Leadership Coach",
     description: "Empowering Corporate Teams, Fostering Leadership & Driving Transformation Through Action-Oriented Learning.",
-    images: ["https://nextjs-executive-portfolio-template.vercel.app/og-image.jpg"],
+    images: ["https://executive-portfolio-template.vercel.app/og-image.jpg"],
   },
 };
 
